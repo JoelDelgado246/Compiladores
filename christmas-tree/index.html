@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz Navidad :D</title>
+
+    <style>
+      img {
+        position: absolute;
+      }
+
+      .hide {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <input
+      onchange="toggleImage('lucesImage')"
+      checked
+      type="checkbox"
+      name="Luces"
+    />
+    <label>Lucecitas chéveres bonitas</label>
+    <input
+      onchange="toggleImage('cintasImage')" aling="top"
+      checked
+      type="checkbox"
+      name="Cintas"
+    />
+    <label>Stars</label>
+    <input
+      onchange="toggleImage('estrellasuperiorImage')"
+      checked
+      type="checkbox"
+      name="Estrella"
+    />
+    <label>Topper</label>
+    <br />
+    <img src="images/tree.png" />
+    <img id="cintasImage" src="images/cintas.png" />
+    <img id="estrellasuperiorImage" src="images/estrellasuperior.png" />
+    <img id="lucesImage" src="images/luces.png" />
+
+    <script>
+      function toggleImage(imageId) {
+        document.getElementById(imageId).classList.toggle("hide");
+      }
+    </script>
+  </body>
+</html>
